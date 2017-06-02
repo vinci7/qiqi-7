@@ -13,6 +13,8 @@ import urllib.request
 from functools import wraps
 import datetime
 
+TULING_API_KEY = ''
+
 #初始化机器人
 bot = Bot(cache_path=True, console_qr=True)
 #保存联系人列表
@@ -22,7 +24,7 @@ bot.chats(True)
 admin_nick_name = 'Cookie🍪'
 
 # 工作群
-work_group_name = '只发表情不打炮'
+work_group_name = ''
 
 # 一次性返回图片数限制
 numberLimit = 2
@@ -34,15 +36,9 @@ if bot.self.name == admin_nick_name:
 	test = []
 	test.append(bot.friends().search('奇奇七号')[0])
 	test.append(bot.friends().search('Cookie🍪')[0])
-	test.append(bot.friends().search('九箫一剑')[0])
-	test.append(bot.friends().search('叶大大大大王👻')[0])
-
-	test.append(bot.groups().search('表情机器人用户零群')[0])
-	test.append(bot.groups().search('表情机器人用户一群')[0])
-	#test.append(bot.groups().search('只发表情不打炮')[0])
 
 
-tuling = Tuling(api_key='7fa7736c470d3c10b2412771d11460ce')
+tuling = Tuling(api_key=TULING_API_KEY)
 
 # 大字功能支持颜色
 colorDict = {'大字': 'black', '彩虹字': 'black', '黑字': 'black', '白字': 'white', '绿字': 'green', 
