@@ -23,6 +23,7 @@ wxpy使用web版微信的接口，通过wxpy获取用户发送的消息。
 该机器人的工作主要是将png图片转换成gif图片回复，并在图片过大时进行压缩。
 
 ### 相关项目
+[微信个人斗图机器人—奇奇七号](https://vinci7.github.io/qiqi-7/)
 
 [斗图啦微信机器人](https://www.doutula.com/faq)
 
